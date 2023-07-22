@@ -1,7 +1,8 @@
 SHELL = bash
 
-PDFS = amed.pdf kuta.pdf gracetown.pdf
-PNGS = $(subst pdf,png,$(PDFS))
+INFOS = amed.info kuta.info gracetown.info
+PDFS = $(subst info,pdf,$(INFOS))
+PNGS = $(subst info,png,$(INFOS))
 .PRECIOUS: $(PNGS)
 
 .PHONY: all
