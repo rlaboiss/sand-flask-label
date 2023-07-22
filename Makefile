@@ -9,7 +9,7 @@ PNGS = $(subst info,png,$(INFOS))
 all: $(PDFS)
 
 %.pdf: %.svg
-	inkscape -A $@ $<
+	inkscape --export-type=pdf --export-filename=$@ $<
 
 %.svg: %.png template.svg
 	DIR=$(CURDIR) ;				\
