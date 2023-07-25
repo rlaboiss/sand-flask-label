@@ -1,1 +1,1 @@
-<img src="sand-flask-example.jpg.png" width=40% height=40%>
+<img src="sand-flask-example.jpg" width=40% height=40%>
