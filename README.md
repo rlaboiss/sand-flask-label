@@ -24,7 +24,7 @@ sudo apt install qrencode
 ```
 
 
-How it words
+How it works
 ------------
 
 ### The SVG template file
@@ -97,5 +97,5 @@ eval: (flyspell-mode)
 End:
 --->
 
-<!--  LocalWords:  SVG PNG GPL
+<!--  LocalWords:  SVG PNG GPL Inkscape
  -->
