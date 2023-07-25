@@ -64,7 +64,7 @@ make
 
 For the example shown above, a PDF file will be generated, which will contain the following (actually, A4 PDF files are generated; the image below is a cropped version of the file):
 
-![figure][label-example.png]
+![figure](label-example.png)
 
 The directory can be cleaned, with this command:
 
