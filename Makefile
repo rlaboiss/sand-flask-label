@@ -1,6 +1,6 @@
 SHELL = bash
 
-INFOS = amed.info kuta.info gracetown.info vrango.info langoyene.info
+INFOS = $(wildcard *.info)
 PDFS = $(subst info,pdf,$(INFOS))
 PNGS = $(subst info,png,$(INFOS))
 .PRECIOUS: $(PNGS)
