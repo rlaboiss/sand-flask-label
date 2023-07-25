@@ -66,7 +66,9 @@ For the example shown above, a PDF file will be generated, which will contain th
 
 ![figure](label-example.png)
 
-The directory can be cleaned, with this command:
+Print the file, cut the labels and stick them to the jars.
+
+Finally, the directory can be cleaned, with this command:
 
 ```shell
 make clean
