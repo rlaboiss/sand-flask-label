@@ -5,7 +5,7 @@ Automatic generation of labels for sand flasks
 Introduction
 ------------
 
-This repository contains code that I use for automatically generating labels that I stick on sand flasks of my collection, shown in the picture below (click on it for an enlarged version of the image):
+This repository contains code that I use for automatically generating labels that I stick on the sand flasks of my collection, shown in the picture below (click on it for an enlarged version of the image):
 
 <img src="sand-flask-example.jpg" width=40% height=40%>
 
