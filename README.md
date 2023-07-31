@@ -66,7 +66,7 @@ For the example shown above, a PDF file will be generated, which will contain th
 
 ![figure](label-example.png)
 
-Print the file, cut the labels, stick them to the flasks, and you are done!
+Print the file, cut the labels, stick them to the flask, and you are done!
 
 ### Tidying up
 
