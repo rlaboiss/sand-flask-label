@@ -5,17 +5,17 @@ Automatic generation of labels for sand flasks
 Introduction
 ------------
 
-This repository contains code that I use for automatically generating labels that I stick on the sand flasks of my collection, shown in the picture below (click on it for an enlarged version of the image):
+This repository contains the code that I use to automatically generate labels that I stick on the sand flasks in my collection, shown in the picture below (click on it for to see an enlarged version):
 
 <img src="sand-flask-example.jpg" width=40% height=40%>
 
-The QR code on the top of each cork plug contains a URL for Google Maps, which indicate the precise location where the sand in the respective flask was collected.
+The QR code on the top of each cork plug leads to a Google Maps URL that shows the exact location where the sand in the flask was collected.
 
 
 Prerequisites
 -------------
 
-The code in this repository is intended to be run on a Unix-like system. In particular, for a Debian-based system, the necessary software can be installed with the following commands:
+The code in this repository is intended to be run on a Unix-like system. For a Debian-based system, the necessary software can be installed using these commands:
 
 ```shell
 sudo apt install make
@@ -29,15 +29,15 @@ How it works
 
 ### The SVG template file
 
-The appearance of the labels is controlled via the file [template.svg](template.svg). This SVG file can be edited with any vector graphic editor, like [Inkscape](https://inkscape.org/). It must contain, at least, three objects:
+The appearance of the labels is controlled by the [template.svg](template.svg) file. This file can be edited with any vector graphics editor, such as [Inkscape](https://inkscape.org/). It must contain at least three objects:
 
 1. one text object with the rendered text “#TEXT1#”,
 2. one text object with the rendered text “#TEXT2#”, and
 3. an image object for inclusion of the PNG image of the QR code.
 
-The two text objects will be rendered in the final PDF files with the same font, style, and size, as seen in the SVG file.
+The two text objects will appear in the final PDF file with the same font, style, and size, as seen in the SVG file.
 
-For the image object, the associated SVG element `<image>` must have the following properties:
+The associated SVG element (`<image>`) of the image object must have the following properties:
 
 ```
 sodipodi:absref="#DIR#/#STEM#.png"
@@ -46,13 +46,13 @@ xlink:href="#STEM#.png"
 
 ### The info files
 
-For each desired label, a corresponding `.info` file must be created, containing a single line, with three fields, separated by semicolons, like this:
+A corresponding .info file must be created for each desired label. This file should contain a single line with three fields separated by semicolons, like this:
 
 ```
 AMED;BALI;https://goo.gl/maps/oiXzww134QXGw1wa9
 ```
 
-The texts in the the first two fields will appear in the place of the two text objects, replacing the “#TEXT1#” and “#TEXT2#”, respectively. The URL in the third field will be converted into a PNG file containing the QR code for that URL. 
+The text in the first two fields will replace the text objects "#TEXT1#" and "#TEXT2#," respectively. The URL in the third field will be converted into a PNG file containing a QR code for that URL. 
 
 ### The resulting PDF files
 
@@ -66,7 +66,7 @@ For the example shown above, a PDF file will be generated, which will contain th
 
 ![figure](label-example.png)
 
-Print the file, cut the labels, stick them to the flask, and you are done!
+Print the file, cut out the labels, attach them to the flask, and you are done!
 
 ### Tidying up
 
